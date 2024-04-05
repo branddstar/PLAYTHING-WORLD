@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLAYTHING WORLD</title>
+    <link rel="stylesheet" href="pk.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-E4U+ir5lKlFvFEDP1w6CDSNOL5d5I0X73B1ldpI5rDhST50Tz5GZ0eLW1grR6jSkQTYBRVZAxPZ8tcvO7f3yzw=="
+        crossorigin="anonymous" />
+    <style>
+        /* Additional CSS for responsiveness */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .container-navbar {
+                padding: 0.5rem;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .navbar .fa-bars {
+                display: block;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+
+            .menu.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 4rem;
+                left: 0;
+                width: 100%;
+                background-color: var(--primary-color);
+                padding: 1rem;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .menu.active li {
+                margin-bottom: 1rem;
+            }
+
+            .menu a {
+                color: #fff;
+            }
+
+            .h1,
+            .h2,
+            .h3,
+            .h4,
+            .p1,
+            .p2,
+            .p3,
+            .p4 {
+                margin: 0 0.5rem;
+				font-size: .9rem;
+            }
+
+            .imagen-izquierda,
+            .imagen-derecha {
+                float: none;
+                margin: 1rem auto;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fas fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="Inicio.html">Volver a inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="h1">
+            <h1>PAQUETE PW</h1>
+        </div>
+        <div class="p1">
+            <p>Nuestro marca está enfocada al público en general, pero más específicamente a niños y niñas de 3 años o aquellas personas que padezcan de trastornos como déficit de atención, autismo, ansiedad, entre otros.</p>
+        </div>
+        <div class="h2">
+            <h2>PROPÓSITO</h2>
+        </div>
+        <div class="p2">
+            <p>Plaything World es una empresa fundada a partir de la idea de crear productos dirigidos a un público mayormente infantil. Ofrecemos kits didácticos que ayudarán al desarrollo de la psicomotricidad temprana. En un nivel cognitivo, se busca que los niños aumenten la concentración, la expresividad, la creatividad y la memoria. Organización del espacio-tiempo, distinguiendo el tamaño, forma y color de las cosas. A nivel motor, buscamos que los niños sean conscientes, así mismo controlen su cuerpo y sus movimientos. Esto a su vez mejorará el equilibrio y la coordinación motora de nuestros clientes.</p>
+        </div>
+        <div class="h3">
+            <h2>PROMESA</h2>
+        </div>
+        <div class="p3">
+            <p>Tenemos el compromiso de que nuestro producto sea totalmente funcional en cuanto al objetivo con el cual se realiza, con materiales de buena calidad y reciclados/rehusados para contribuir al medio ambiente, hecho con una producción controlada en cuanto a la cantidad de pedidos solicitadas por los consumidores, además de una presentación de calidad, siendo el producto empaquetado con materiales amigables con el ambiente. Ya en dado caso de que suceda algún percance en cuanto a la experiencia que tenga el consumidor con el producto, la marca se compromete a cumplir con estos parámetros, ya esto depende del caso que se presente.</p>
+        </div>
+        <div class="h4">
+            <h2>KIT</h2>
+        </div>
+        <div class="p4">
+            <p>El kit didáctico tiene una intención educativa para los niños, en cuanto son las texturas y formas presentes en el producto. Al mismo tiempo, estos objetos les permiten al infante tener un tiempo de diversión y creatividad. Por lo que, este balance entre lo educativo, la creatividad y la diversión, permiten que también sea atractivo para los padres, ya que están buscando otras maneras innovadoras de educar a sus hijos, mientras los mantienen entretenidos.</p>
+        </div>
+        <div class="contenedor">
+            <img src="Imagenes/Paquete2.jpg" alt="img1" class="imagen-izquierda">
+            <img src="Imagenes/Paquete2.jpg" alt="img2" class="imagen-derecha">
+        </div>
+    </div>
+    <script>
+        // JavaScript for toggling the mobile menu
+        const navbarToggle = document.querySelector('.navbar .fa-bars');
+        const menu = document.querySelector('.navbar .menu');
+
+        navbarToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

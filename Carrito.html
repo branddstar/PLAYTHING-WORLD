@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Mi carrito</title>
+		<link rel="stylesheet" href="car.css" />
+	</head>
+	<body class="">
+	
+			
+
+			<div class="container-navbar">
+				<nav class="navbar container">
+					<i class="fa-solid fa-bars"></i>
+					<ul class="menu">
+						<li><a href="registro.php"><?php echo $_SESSION['nombre']; ?></a>
+							<ul>
+							<li><a href="perfil.php">MI PERFIL</a>
+							<li><a href="Carrito.html">MI CARRITO</a>
+							<li><a href="Mi cuenta.html">SALIR</a>
+	</ul>
+					</ul>
+
+					
+				</nav>
+			</div>
+		
+
+			<header>
+				<h1>Mi carrito de compras</h1>
+			</header>
+			<section class="contenedor">
+				<div class="contenedor-items">
+					<div class="item">
+						<span class="titulo-item">Paquete PW</span>
+						<img src="Imagenes/IMG-20240305-WA0091.jpg" alt="" class="img-item">
+						<span class="precio-item">$200.00</span>
+						<button class="boton-item">Agregar al Carrito</button>
+					</div>
+				</div>
+				<!-- Carrito de Compras -->
+				<div class="carrito" id="carrito">
+					<div class="header-carrito">
+						<h2>Tu Carrito</h2>
+					</div>
+		
+					<div class="carrito-items">
+						
+					
+					<div class="carrito-total">
+						<div class="fila">
+							<strong>Tu Total</strong>
+							<span class="carrito-precio-total">
+								$200.00
+							</span>
+						</div>
+						<button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+					</div>
+				</div>
+			</section>
+<script src="car.js"></script>
+		<script
+        src="https://kit.fontawesome.com/81581fb069.js"
+        crossorigin="anonymous"
+		></script>
+
+</body>
+</html>
